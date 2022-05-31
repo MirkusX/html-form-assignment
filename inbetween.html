@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>video, mp3 og annet</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <section id="media">
+            <h1>Share your video</h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/ERin_FwEEoU?autoplay=1" title="YouTube video player" 
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+            allowfullscreen></iframe>
+            <h1>Upload your sounds</h1>
+            <audio controls>
+                <source src="har-ikke-noe.mp3" type="audio/mpeg">
+                <source src="har-ikke-noe.ogg" type="audio/ogg">
+                Your browser does not support the audio tag
+            </audio>
+            <h1>Upload your videos</h1>
+            <video width="300" height="200" controls poster="frenchman.webp">
+                <source src="hei.mp4" type="video/mp4">
+                <source src="hei.ogg" type="video/ogg">
+                Your browser does not support the video tag
+            </video>
+            <h1>Upload your images</h1>
+            <picture>
+                <source srcset="frenchman.webp" media="(min-width: 1000px)">
+                <source srcset="flush.jpg" media="(min-width: 560px)">
+                <img src="toilet.jpg" alt="toilet">
+            </picture>
+    </body>
+</html>
